@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<script type="text/javascript">
+			function CheckValue(form)
+			{
+				var msg=document.getElementById("ErrorMsg");
+				var username = document.getElementById("username").value;
+				if(username == "") {
+					msg.innerText="Please input username.";
+					document.getElementById("username").focus();
+					return false;
+				}
+				var password = document.getElementById("password").value;
+				if(password == "") {
+					msg.innerText="Please input password.";
+					document.getElementById("password").focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+    </head>
+    <body>
+		<div id="main">
+			<h2>Welcome to Laundry System</h2>
+			<h3>Sign In</h3>
+			<form name="login" action="login.php" method="post" onsubmit="return CheckValue(this)">
+				<p>Username: <input type="text" name="username" id="username"></p>
+				<p>Password: <input type="password" name="password" id="password"></p>
+				<p>
+					<!-- <input id="but" type="submit" name="submit" value="Login">-->
+					<button class="but" type="submit" name="submit">submit</button> 
+					<!-- <a href="register.html"><input type="button" name="register" value="Register"></a> -->
+				</p>
+				<label id="ErrorMsg"></label>
+			</form>
+			<label>Don't have an account? Please contact Administorator.</label>  
+		</div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+html{
+	height:100%;
+	background-image: url(../images/mainbg.jpg);
+	background-repeat: no-repeat, repeat;
+	background-color: #cccccc;
+	background-size: 100% 100%;
+}
+
+body{
+	height:100%;
+	margin:0;
+}
+
+#main{
+	text-align: center;
+	/*background-color: #cccccc;
+	opacity: 0.5;
+	width: 1200px;
+	height: 500px;
+	margin: 0 auto;*/
+	padding:70px 0px 0px 0px;
+}
+.but{   
+	 width: 150px;   
+	 min-height: 20px;    
+	 background-color: #4a77d4;   
+	 border: 1px solid #3762bc;   
+	 color: #fff;   
+	 font-size: 15px;   
+	 line-height: normal;   
+	 border-radius: 5px;     
+}
+#ErrorMsg{
+	color : red;
+}
+
+input,select{width: 150px;}
+
+table{
+	margin:auto;
+}
+.leftBtn{ 
+ width: 15%; 
+ height: 15%;
+ margin-top: 10px; 
+ border: 1px solid #3762bc;
+ border-radius: 10px;
+ font-size: 20px;
+ background-color: #4a77d4;  
+ margin-left:30%;
+ float:left;
+}
+.rightBtn{ 
+ width: 15%; 
+ height: 15%;
+ margin-top: 10px; 
+ border: 1px solid #3762bc;
+ border-radius: 10px;
+ font-size: 20px;
+ background-color: #4a77d4;  
+ margin-right:30%;
+ float:right;
+}
+
+.leftBtn:hover{
+    color: #fff;
+    background-color: #337ab7;
+}
+.rightBtn:hover{
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.registerLable{
+	width:150px;
+	display:inline-block;
+}

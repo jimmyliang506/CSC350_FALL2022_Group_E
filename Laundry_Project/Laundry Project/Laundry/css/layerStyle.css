@@ -1,0 +1,34 @@
+#changeContentBGLayer { /*background page when modify of delete user*/
+    opacity: 0.8; 
+    width: 100%; 
+    height: 2300px; 
+    background: #000; 
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: none;
+    z-index: 20;
+}
+#modifyContentLayer { /* modify user page*/
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    display: none;
+    z-index: 22;
+    position: absolute;
+    top: 100px;
+    left: 400px; 
+}
+#deleteContentLayer { /* delete user page*/
+    width: 500px; 
+    height: 500px; 
+    background: #fff; 
+    display: none; /*hide*/
+    z-index: 21; 
+    position: absolute;
+    top: 100px;
+    left: 400px; 
+}
+input{
+    margin-bottom: 10px;
+}

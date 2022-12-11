@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<script type="text/javascript">
+			function CheckValue(form){
+				var msg=document.getElementById("ErrorMsg");
+				var username = document.getElementById("username").value;
+				if(username == "") {
+					msg.innerText="Please input username.";
+					document.getElementById("username").focus();
+					return false;
+				}
+				
+				var regNumber = /\d+/;        //password must include at least 1 number
+				var regString = /[a-zA-Z]+/;  //password must include at least 1 letter
+				var fpassword = document.getElementById("password").value;
+				var spassword = document.getElementById("confirmPassword").value;
+				if(fpassword == "" || spassword == "") {
+					msg.innerText="Please input password.";
+					document.getElementById("password").focus();
+					return false;
+				}else if(fpassword != spassword){
+					msg.innerText="Passwords do not match.";
+					document.getElementById("password").focus();
+					return false;
+				}else if(fpassword.length < 8 || spassword.length < 8){
+					msg.innerText="The password length cannot be less than 8 characters";
+					document.getElementById("password").focus();
+					return false
+				}else if(regNumber.test(fpassword) && regString.test(fpassword)){
+					return true;
+				}else{
+					msg.innerText="The password must contain numbers and letters"
+					document.getElementById("password").focus();
+					return false
+				}
+				return true;
+			}	
+		</script>
+    </head>
+    <body>
+		<div id="main">
+			<a href="laundryBooking.php"><img src="images/Goback.png" title="Back to Manage Page" height="35" width="40"/></a><br>
+			
+			<form action="register.php" method="post" onsubmit="return CheckValue(this)">
+				<p><label class="registerLable">Username: </label><input type="text" name="username" id="username"></p>
+				<p><label class="registerLable">Password: </label><input type="password" name="password" id="password"></p>
+				<p><label class="registerLable">Confirm Password: </label><input type="password" name="confirmPassword" id="confirmPassword"></p>
+				<p><label class="registerLable">Usertype: </label><select name="usertype" id="usertype">
+								<option value ="0">user</option>
+								<option value ="1">administrator</option>
+							</select></p>
+				<p><button class="but" type="submit" name="register">Register</button></p>
+				<label id="ErrorMsg"></label>
+			</form>
+		</div>
+    </body>
+</html>
