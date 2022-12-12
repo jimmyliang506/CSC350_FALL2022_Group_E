@@ -7,7 +7,7 @@ NOTES: To be able to create,delete and modify the users you need to log in the s
 ![Notes for project](https://user-images.githubusercontent.com/80984930/206946864-d653cb65-1fd1-4476-924f-c5323f939dce.jpg)
 To use the website you need to: 
 
-1.Run "Laundry Project\CreateDatabase\CreateDatabase.sql" on mysql clent to create database and tables, please notes that Admin/321 created by default
+1.Run "Laundry Project\CreateDatabase\CreateDatabase.sql" on mysql client to create database and tables, User ADMIN ID:Admin and Password:321 is created by default when you run the code.
 
 2.Put the project code "Laundry Project\Laundry" into your webpage server, like xampp
 
