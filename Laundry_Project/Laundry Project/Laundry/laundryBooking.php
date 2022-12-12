@@ -92,7 +92,7 @@
 				</tr>";
 			echo 	"</table>"."<br>";
 		}else{//if user doesn't have valid booking record in current week, display select menu
-			echo "<p>You don't have avaialbe booking, please make a booking.<br></p>";
+			echo "<p>You have not book an appointment for laundry, please make a book an appointment.<br></p>";
 			bookingDropBox($conn);
 		}
 		echo "</div>";
