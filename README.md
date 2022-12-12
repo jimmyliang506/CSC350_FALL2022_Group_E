@@ -4,7 +4,7 @@ Thank you so much for using our website.
 
 To use our project you need to: 
 
-1.Run "Laundry Project\SQL\CreateDatabase.sql" on mysql clent to create database and tables, please notes that Admin/321 created by default
+1.Run "Laundry Project\CreateDatabase\CreateDatabase.sql" on mysql clent to create database and tables, please notes that Admin/321 created by default
 
 2.Put the project code "Laundry Project\Laundry" into your webpage server, like xampp
 
