@@ -10,7 +10,7 @@
     $usertype = $_POST['usertype'];
     $password = $_POST['password'];
 	
-	include('dbconnect.php');//链接数据库
+	include('dbconnect.php');
     $upateSql="update laundryuser set username = '$username', type = '$usertype', password = '$password' where userID = $userId";
 	$result = mysqli_query( $conn, $upateSql);
 	
@@ -22,6 +22,6 @@
 		echo $username.' update failed.';
 	}
    
-    $conn->close();//关闭数据库
+    $conn->close();
 ?>
 
